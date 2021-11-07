@@ -1,4 +1,12 @@
-"""This script will take a file, reformat it to YAML, then generate the content to be inputted in custom spawner client.lua. 
+"""
+REQUIREMENTS: file named cars.txt matching the following format:
+[AstroMartin]
+amdbx = Aston Martin DBX Carbon Edition
+ast = 2013 Aston Martin Vanquish
+[Audi]
+80B4 = 1995 Audi Cabriolet (RS2) (B4)
+
+Description: This script will take a file named cars.txt, reformat it to YAML, then generate the content to be inputted in custom spawner client.lua, thenprint it to the screen 
 The content should be added between the following two lines
 (usually on line 9) - local submain = menuPool:AddSubMenu(submain, 'Donator Vehicles', "", 1420, 0)
 and
