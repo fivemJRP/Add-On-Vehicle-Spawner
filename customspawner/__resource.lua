@@ -6,6 +6,5 @@ version '1.0'
 
 
 
-client_script "@NativeUI/NativeUI.lua"
+client_script "NativeUI.lua"
 client_script "client.lua"
-
