@@ -1071,7 +1071,7 @@ audi.OnItemSelect = function(sender, item, index)
     end
 end]]
 
-RegisterCommand('wbmenu', function() -- edit this line to change the command to open the menu
+RegisterCommand('donator', function() -- edit this line to change the command to open the menu
     mainMenu:Visible(not mainMenu:Visible())
 end, false)
 ------------------------------------------------DO NOT EDIT BELOW THIS LINE---------------------------------------------------------------
