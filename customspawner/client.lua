@@ -1039,6 +1039,22 @@ ExclusiveLEOPackmenu.OnItemSelect = function(sender, item, index)
     end
 end
 
+local TowTruckmenu = menuPool:AddSubMenu(vehiclesMenu, 'Tow Truck Pack',"", 1420, 0)
+local TowTruckmenu = {}
+TowTruckmenu.veh0 = NativeUI.CreateItem('2018 Generic 4500 Class Tow Trucks Crew Cab', 'Get this vehicle.')
+TowTruckmenu.veh1 = NativeUI.CreateItem('2018 Generic 4500 Class Tow Trucks Single Cab', 'Get this vehicle.')
+towpackmenu:AddItem(TowTruckmenu.veh0)
+towpackmenu:AddItem(TowTruckmenu.veh1)
+towpackmenu.OnItemSelect = function(sender, item, index)
+    if item == TowTruckmenu.veh0 then
+        deleteVeh()
+        spawnVehicle('f450c', '2018 Generic 4500 Class Tow Trucks Crew Cab')
+    elseif item == TowTruckmenu.veh1 then
+        deleteVeh()
+        spawnVehicle('f450s', '2018 Generic 4500 Class Tow Trucks Single Cab')
+    end
+end
+
 ---------------------------------------------------------------------------------------------------------------
 --[[                           EXAMPLE
 local audi = menuPool:AddSubMenu(vehiclesMenu, 'Audi', "", 1420, 0)
